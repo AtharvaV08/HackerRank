@@ -1,0 +1,6 @@
+e_news_stu = int(input())
+e_news_stu_rno = set(map(int, input().split()))
+f_news_stu = int(input())
+f_news_stu_rno = set(map(int, input().split()))
+total_students = e_news_stu_rno.symmetric_difference(f_news_stu_rno)
+print(len(total_students))

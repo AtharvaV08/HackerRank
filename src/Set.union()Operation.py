@@ -1,0 +1,6 @@
+n = int(input())
+n_stu_rno = set(map(int, input().split()))
+b = int(input())
+b_stu_no = set(map(int, input().split()))
+total_sub_students = n_stu_rno.union(b_stu_no)
+print(len(total_sub_students))

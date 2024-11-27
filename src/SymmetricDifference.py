@@ -1,0 +1,10 @@
+first_value = int(input())
+string_f1 = set(map(int, input().split()))
+second_value = int(input())
+string_f2 = set(map(int, input().split()))
+union1 = string_f1.difference(string_f2)
+union2 = string_f2.difference(string_f1)
+combined_union = list(union1.union(union2))
+sorted_union = sorted(combined_union)
+for items in sorted_union:
+    print(items)

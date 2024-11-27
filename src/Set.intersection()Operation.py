@@ -1,0 +1,6 @@
+n = int(input())
+n_stu_rno = set(map(int, input().split()))
+b = int(input())
+b_stu_rno = set(map(int, input().split()))
+total_stu_sub_both_paper = n_stu_rno.intersection(b_stu_rno)
+print(len(total_stu_sub_both_paper))
